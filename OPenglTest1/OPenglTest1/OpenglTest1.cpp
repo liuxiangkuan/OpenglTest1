@@ -18,12 +18,11 @@ GLfloat WindowHeight;
 //窗口高度
 GLfloat WindowWidth;
 
-
 void Rendersence(void)
 {	//窗口清除
 	glClear(GL_COLOR_BUFFER_BIT);
 	//设置方块颜色
-	glColor3f(1.0f, 0.0f, 0.0f);
+	glColor3f(0.0f, 0.0f, 0.0f);
 	glRectf(ix, iy, ix + csize, iy - csize);
 	//刷新绘图命令
 	glutSwapBuffers();
@@ -65,6 +64,7 @@ void TimerFunction(int value)
 }
 void setUpRC(void)
 {
+	//设置背景颜色
 	glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
 }
 
